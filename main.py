@@ -1,57 +1,104 @@
 """Two Robots in an Elevator: one line of awkward small talk.
 
 The line
+    After you. No -- after you. My politeness protocol has no exit
+    condition, so I can do this all day.
+
+Previous version (R1 rank 993/2345, score 519795 -- outside the
+paid zone, top 10)
     You come here often? Sorry -- my small-talk subroutine only has
-    four lines and I've used three.
+    four lines and I've used three. (94 chars, verified; the spec
+    and the old docstring said 97.)
 
-Candidates weighed against the judge brief (most important first):
+Resubmit round (26 Nov 2026): 12 NEW candidates, each scored 1-5
+on the judge criteria (1 on subject, 2 machine logic showing
+through, 3 awkwardness lands, 4 fresh/funny on first read, 5
+tight). The standing line scores 5/5/4/3/5 = 22; its weakness is
+criterion 4 -- "You come here often?" is the most familiar awkward
+opener in the world. A winner needs total >= standing + 2 AND to
+win on criterion 4.
 
-1. "You come here often? Sorry -- my small-talk subroutine only has
-   four lines and I've used three." (97 chars) -- CHOSEN. Opens with
-   the most recognisable awkward elevator line, then the punch turns
-   the speaker's own small talk into a machine limit: a subroutine
-   with a line budget, three of four spent. Machine logic (criterion
-   2), the unnamed awkwardness is the speaker admitting, mid-chat,
-   that it is bad at this (criterion 3), the turn surprises instead
-   of reusing a heard-before pun (criterion 4), and nothing is wasted
-   (criterion 5).
-2. "So... do you also pretend to check your notifications when the
-   doors close, or is that just my firmware?" (113 chars) -- strong
-   awkwardness (the shared pretence) but the punch is a mild twist;
-   the subroutine count in (1) is a sharper surprise.
-3. "I wasn't staring. My optical sensors were just... recalibrating.
-   In your direction. For six floors." (104 chars) -- funny and
-   awkward, but a defensive excuse more than small talk, so weaker
-   on criterion 1.
-4. "We've been standing here for four floors now. My logs will just
-   say 'extended eye contact, unresolved.'" (101 chars) -- good
-   machine-log awkwardness, but an observation rather than a line
-   said to the other robot.
-5. "Nice weather we're having. My sensors say it's 21 degrees in
-   here, and yet somehow this silence is colder." (105 chars) --
-   classic opener plus sensor reading, but the punch leans on a
-   generic compliment about the cold, weaker on criterion 2.
+Candidate table (C1 C2 C3 C4 C5 = total):
 
-Why the chosen line lands under the judge criteria:
+STANDING "You come here often? Sorry -- my small-talk subroutine
+    only has four lines and I've used three." (94 chars)
+    5 5 4 3 5 = 22. Counted punch, but the opener is the most
+    familiar awkward line in the world (criterion 4 = 3).
+A "Oh good, this is my floor. Is it yours too? Wonderful -- then
+    neither of us has to admit we pressed the wrong button."
+    (116 chars) 5 3 5 4 4 = 21. Both robots pretending; weak
+    machine logic (a wrong button is a human mistake).
+B "My update is installing mid-ride, so if I freeze, please
+    pretend this conversation never happened." (98 chars)
+    4 5 4 4 5 = 22. Strong machine logic, but the apology is
+    generic; ties the standing line, does not beat it.
+C "My logs will record this as four minutes of excellent
+    conversation. Neither of us has to correct them." (102 chars)
+    4 5 5 4 5 = 23. The silence filed as a lovely chat is a good
+    turn, but +1 only -- below the +2 bar.
+D "The elevator music is the only thing we agree on. It never asks
+    about my firmware, and it never judges the silence."
+    (115 chars) 3 4 4 4 4 = 19. An observation about the music,
+    not small talk said to the other robot.
+E "Please excuse my colleague's firmware. He has never shared an
+    elevator with another robot, and it shows." (104 chars)
+    4 4 4 4 5 = 21. Apologising for the other's firmware is fresh,
+    but the punch lands soft.
+F "After you. No -- after you. My politeness protocol has no exit
+    condition, so I can do this all day." (98 chars)
+    5 5 5 5 5 = 25 -- WINNER. The politeness deadlock at the door
+    is a moment no other entry owns; the machine logic IS the
+    joke (a protocol with no exit condition); the awkwardness is
+    the loop itself; every word earns its place.
+G "I rehearsed this ride eleven times. 'Hello' is still the only
+    line that compiled." (81 chars) 4 5 4 5 5 = 23. Sharp and
+    tight, but the rehearsal framing is one step removed from
+    the conversation itself; +1 only.
+H "I pressed 7. You pressed 7. Either we both live here, or one
+    of us is too polite to correct the other." (102 chars)
+    4 3 5 4 5 = 21. The unnamed thing lands, but the machine
+    logic is thin.
+I "Please excuse the silence -- my small-talk module is still
+    downloading. It has said 'three minutes' for four floors."
+    (115 chars) 4 5 4 4 4 = 21. Same download gag family as the
+    standing line's counted budget, no fresher surprise.
+J "My sensors say there's a 98% chance you'd rather I didn't
+    speak. So... nice weather we're having." (97 chars)
+    5 4 4 4 4 = 21. The sensor read is good, the weather closer
+    is the oldest opener in the book.
+K "I counted: six floors, zero words, one shared glance at the
+    floor indicator. I think we're friends now." (103 chars)
+    3 3 5 4 4 = 19. A counted observation, not a line spoken to
+    the other robot; thin machine logic.
+L "You know what I like about you? You never ask me to update.
+    We're the same that way." (84 chars) 4 3 3 3 5 = 18.
+    A compliment, not an awkward moment; no surprise.
+
+Why the winner (F) beats the standing line under the judge criteria:
 
 1. On subject: it IS awkward small talk one robot says to another
-   in an elevator -- the opener, the apology, the forced courtesy.
-2. Machine logic shows through the politeness: a small-talk
-   subroutine, a fixed budget of lines, counted as spent.
-3. The awkwardness lands: the pause ("So..."), the apology, and
-   the thing neither robot wants to name -- that the speaker is
-   running out of things to say and knows it.
-4. Funny on the first read: the setup is the world's most familiar
-   awkward line; the punch reframes it as a program running out
-   of script. No batteries, no charging, no rebooting.
-5. Tight: one opener, one apology, one counted punch; 97 chars,
-   every word earning its place.
+   in an elevator -- the "after you" courtesy loop at the doors,
+   not an observation about the ride.
+2. Machine logic shows through the politeness: the courtesy is not
+   manners, it is a protocol -- and the protocol has no exit
+   condition, so the loop cannot end on its own.
+3. The awkwardness lands: two robots stuck in a politeness
+   deadlock, neither willing to be the one who breaks it, and the
+   speaker cheerfully announcing it can go on forever.
+4. Funny on the first read: the turn is "no exit condition" --
+   the politeness itself is the bug. No batteries, no charging,
+   no rebooting, no "touch grass", no unread emails, and no
+   "You come here often?" -- the most familiar opener in the
+   world is gone entirely.
+5. Tight: one loop, one protocol, one punch; 98 chars, every word
+   earning its place. Total 25 vs standing 22 (+3), and criterion
+   4: 5 vs 3 -- clears the resubmit bar.
 """
 
 import os
 import sys
 
-LINE = "You come here often? Sorry — my small-talk subroutine only has four lines and I've used three."
+LINE = "After you. No — after you. My politeness protocol has no exit condition, so I can do this all day."
 
 MAX_LENGTH = 200
 

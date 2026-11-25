@@ -6,9 +6,9 @@
 
 ## One line of awkward small talk between two robots in an elevator
 
-> You come here often? Sorry — my small-talk subroutine only has four lines and I've used three.
+> After you. No — after you. My politeness protocol has no exit condition, so I can do this all day.
 
-Why it lands: the line opens with the most recognisable awkward elevator opener, then the punch turns the speaker's own small talk into a machine limit — a subroutine with a four-line budget, three of them already spent. The apology is the forced courtesy; the counted budget is the robot logic showing through; the thing neither robot wants to name is that the speaker is running out of script mid-conversation.
+Why it lands: two robots get stuck in an "after you" courtesy loop at the elevator doors — and the courtesy is not manners, it is a protocol with no exit condition, so the loop cannot end on its own. The politeness itself is the bug; the speaker cheerfully announces it can do this all day.
 
 ## Run it
 
